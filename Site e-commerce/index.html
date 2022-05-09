@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site e-commerce</title>
+    <link rel="stylesheet" href="content/style.css?id=3">
+</head>
+<body>
+    
+    <div class="btitle"><h3>jonathan<span class="com" style="color: black;">.com</span></h3></div>
+    <header>
+        <div >
+            <h1>Accueil</h1>
+            <nav>
+                <ul>
+                    <!-- <li><a href="#">Se connecter</a></li> -->
+                    <li><a href="#" class="sign">S'inscrire</a></li><span class="disable"> <br> </span>
+                    <li><button type="button" onclick="darkMode();  document.getElementById('night').style.display = 'block'; document.getElementById('day').style.display = 'none'; " id="day" class="btn">Passer en mode nuit</button></li>
+                    <li><button type="button" onclick="notDarkMode(); document.getElementById('day').style.display = 'block'; document.getElementById('night').style.display = 'none'; " id="night" class="btn">Passer en mode jour</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="welcome">
+
+        <article style="background-image: url(content/img/node.jpg);">
+            <div class="overlays" id="greetingtext">
+                <h2>Bienvenue dans le meilleur <br>site de vente en ligne !</h2>
+                <a href="#">En savoir plus</a>
+            </div>
+        </article>
+
+        <!-- <img src="content/img/1-businesscomputer.png" alt="1-businesscomputer" class="img1"> -->
+        <!-- <div class="greetingtext" style="background-image: url(content/img/node.jpg);">
+            <h2>Bienvenue dans le meilleur site de vente en ligne !</h2>
+            <a href="#">En savoir plus</a>
+        </div> -->
+            
+        
+    </section>
+
+    <section id="necessity">
+        
+            <article style="background-image: url(content/img/2-products.png); /*background-color: #f5cb8d;*/" id="firstArticle" class="three-articles">
+                <div class="overlay">
+                    <h4>Nos produits</h4>
+                    <p id="info"><small>Nous ne vendons que des produits de qualité pour lesquels vous êtes satisfaits ou remboursés.</small></p>
+                    <a href="#" class="explore">Explorer</a>
+                </div>
+            </article>
+
+            <article style="background-image: url(content/img/3-localisation.png); /*background-color: #a8f8ac;*/" id="secondArticle" class="three-articles">
+                <div class="overlay" id="s-overlay">
+                    <h4>Nos localisations</h4>
+                    <p id="s-info"><small>Nous nous situons dans diverses localités. Vous pouvez nous contactez à tout moment pour en savoir plus.</small></p>
+                    <a href="#" class="explore">Explorer</a>
+                </div>
+            </article>
+            <article style="background-image: url(content/img/4-partenaires.png); /*background-color: #eab5f5;*/" id="thirdArticle" class="three-articles">
+                <div class="overlay" id="t-overlay">
+                    <h4>Nos partenaires</h4>
+                    <p id="t-info"><small>Nous collaborons avec des partenaires de qualité et fidèle aux besoins de nos clients.</small></p>
+                    <a href="#" class="explore">Explorer</a>
+                </div>
+            </article>
+        <div class="clear"></div>
+    </section>
+
+    <section id="about">
+        <div>
+            <h2 class="secondH">A propos du site</h2>
+            <p>Le site de <a href="#"><b>jonathan.com</b></a> est conçue pour digitaliser le monde commercial afin de répandre encore plus les produits des entreprises malagasy à travers le monde.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="log">
+            <h2 class="thirdH">Se connecter</h2>
+            <form action="">
+                <label for="email">Enter your email :</label><br>
+                <input type="email" class="put" required><br>
+    
+                <label for="password">Enter your password :</label><br>
+                <input type="password" class="put" id="mdp" required><br>
+    
+                <button type="submit" class="btlog">LOGIN</button><br>
+                <button type="button" class="fpass" onclick="document.querySelector('.relax').style.display='block'">Forgot password ?</button><br>
+                <p class="relax">Relax and try to remember it ;)</p>
+                <!-- <a href="index.html" target="_blank" class="creation">Create an account</a> -->
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h3 style="color: #fff;">jonathan<span style="color: black;">.com</span></h3>
+            <p>Copyright © 2022. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="content/script.js?id=3"></script>
+</body>
+</html>
